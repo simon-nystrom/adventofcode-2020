@@ -1,0 +1,1 @@
+cat input/$1.txt | python3 day$1.py
