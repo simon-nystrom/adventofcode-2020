@@ -6,12 +6,14 @@ puzzle_input = [x for x in sys.stdin.read().split('\n')]
 
 regex = re.compile(r'(\d+)-(\d+)\s([a-z]):\s([a-z]+)')
 
+
 def count_letter(l, s):
     num = 0
     for c in s:
         if c == l:
             num += 1
     return num
+
 
 @log
 def a(puzzle_input):
@@ -35,6 +37,7 @@ def validate(p1, p2, letter, password):
     if password[p1] == letter or password[p2] == letter:
         return True
     return False
+
 
 @log
 def b(puzzle_input):
