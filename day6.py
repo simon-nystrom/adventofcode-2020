@@ -4,6 +4,7 @@ from utils.log import log
 puzzle_input = [x for x in sys.stdin.read().split('\n\n')]
 puzzle_input = [x.split('\n') for x in puzzle_input]
 
+
 @log
 def a(puzzle_input):
     total = 0
